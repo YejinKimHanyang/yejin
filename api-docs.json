@@ -1,0 +1,118 @@
+{"swagger":"2.0","info":{"description":"<div class='bootstrap'>\n <section id='concept'>\n 
+<div style='margin: 50px 0 0 0 !important; '>\n   
+<div class='main-title'>개요</div>\n     <div class='sub-content'>스마트택배 
+배송조회 API는 국내외 주요 배송사의 실시간 택배 배송정보를 RESTful 형태로 제공하고 있습니다.</div>\n     
+<div class='main-title'>연동방식</div>\n     <img src='../../static/images/map1.png' style='width: 450px;'>\n     
+<div class='sub-content'>Client 는 REST API 규격에 맞춰 배송정보를 요청합니다.</div>\n     
+<div class='main-title'>연동 택배사 코드</div>\n     <div class='sub-title'>국내택배(38개사)</div>\n     
+<div class='sub-content margin-bottom-25'>\n       <table class='table table-bordered' style='text-align: center
+!important;'>\n           <thead>\n               <tr>\n                   <th style='text-align: center 
+!important;'>택배사</th>\n                   <th style='text-align: center !important;'>코드</th>\n  
+<th style='text-align: center !important;'>택배사</th>\n                   <th style='text-align: center 
+!important;'>코드</th>\n                   <th style='text-align: center !important;'>택배사</th>\n       
+<th style='text-align: center !important;'>코드</th>\n               </tr>\n           
+</thead>\n           <tbody>\n<tr><td>CJ대한통운</td><td>04</td><td>한진택배</td><td>05</td><td>롯데택배
+</td><td>08</td></tr>\n<tr><td>우체국택배</td><td>01</td><td>로젠택배</td><td>06</td><td>일양로지스</td><td>
+11</td></tr>\n<tr><td>한덱스</td><td>20</td><td>대신택배</td><td>22</td><td>경동택배</td><td>23</td></tr>\n<tr>
+<td>합동택배</td><td>32</td><td>CU 편의점택배</td><td>46</td><td>GS Postbox 택배</td><td>24</td></tr>\n<tr><td>
+한의사랑택배</td><td>16</td><td>천일택배</td><td>17</td><td>건영택배</td><td>18</td></tr>\n<tr><td>굿투럭</td><td>
+40</td><td>애니트랙</td><td>43</td><td>SLX택배</td><td>44</td></tr>\n<tr><td>호남택배</td><td>45</td><td>우리한방
+택배</td><td>47</td><td>농협택배</td><td>53</td></tr>\n<tr><td>홈픽택배</td><td>54</td><td>(주)홈이노베이션로지스
+</td><td>62</td><td>IK물류</td><td>71</td></tr>\n<tr><td>성훈물류</td><td>72</td><td>용마로지스</td><td>74</td>
+<td>원더스퀵</td><td>75</td></tr>\n<tr><td>티피엠코리아㈜ 용달이 특송</td><td>79</td><td>프레시솔루션</td><td>82</td>
+<td>풀앳홈</td><td>85</td></tr>\n<tr><td>삼성전자물류</td><td>86</td><td>큐런택배</td><td>88</td><td>두발히어로</td>
+<td>89</td></tr>\n<tr><td>위니아딤채</td><td>90</td><td>지니고 당일특급</td><td>92</td><td>오늘의픽업</td><td>94</td>
+</tr>\n<tr><td>로지스밸리</td><td>96</td><td>한샘서비스원 택배</td><td>101</td></tr>\n           </tbody>\n        
+</table>\n     </div>\n     <div class='sub-title'>국제택배(44개사)</div>\n     <div class='sub-content 
+margin-bottom-25'>\n           <table class='table table-bordered' style='text-align: center !important;'>\n 
+<thead>\n            <tr>\n                <th style='text-align: center !important;'>택배사</th>\n 
+<th style='text-align: center !important;'>코드</th>\n                <th style='text-align: center !important;
+'>택배사</th>\n                <th style='text-align: center !important;'>코드</th>\n                <th style=
+'text-align: center !important;'>택배사</th>\n                <th style='text-align: center !important;'>코드</th>
+\n            </tr>\n            </thead>\n            <tbody>\n<tr><td>EMS</td><td>12</td><td>DHL</td><td>13</td>
+<td>FedEx</td><td>21</td></tr>\n<tr><td>UPS</td><td>14</td><td>USPS</td><td>26</td><td>TNT Express</td><td>25</td>
+</tr>\n<tr><td>GSMNtoN</td><td>28</td><td>에어보이익스프레스</td><td>29</td><td>KGL네트웍스</td><td>30</td></tr>\n
+<tr><td>DHL Global Mail</td><td>33</td><td>i-Parcel</td><td>34</td><td>판토스</td><td>37</td></tr>\n<tr><td>ECMS 
+Express</td><td>38</td><td>GSI Express</td><td>41</td><td>CJ대한통운 국제특송</td><td>42</td></tr>\n<tr><td>ACI 
+Express</td><td>48</td><td>ACE Express</td><td>49</td><td>GPS Logix</td><td>50</td></tr>\n<tr><td>성원글로벌카고
+</td><td>51</td><td>세방</td><td>52</td><td>EuroParcel</td><td>55</td></tr>\n<tr><td>Cway Express</td><td>57</td>
+<td>YJS글로벌(영국)</td><td>60</td><td>워펙스코리아</td><td>61</td></tr>\n<tr><td>은하쉬핑</td><td>63</td><td>YJS
+글로벌(월드)</td><td>65</td><td>Giant Network Group</td><td>66</td></tr>\n<tr><td>디디로지스</td><td>67</td><td>
+대림통운</td><td>69</td><td>LOTOS CORPORATION</td><td>70</td></tr>\n<tr><td>CR로지텍</td><td>73</td><td>대운글로벌
+</td><td>76</td><td>LineExpress</td><td>77</td></tr>\n<tr><td>2FastExpress</td><td>78</td><td>엘서비스</td><td>80
+</td><td>제니엘시스템</td><td>81</td></tr>\n<tr><td>스마트로지스</td><td>84</td><td>이투마스(ETOMARS)</td><td>87</td>
+<td>하이브시티</td><td>91</td></tr>\n<tr><td>팬스타국제특송(PIEX)</td><td>93</td><td>큐익스프레스</td><td>95</td><td>
+에이씨티앤코아물류</td><td>97</td></tr>\n<tr><td>롯데택배 해외특송</td><td>99</td><td>나은물류</td><td>100</td></tr>
+\n            </tbody>\n        </table>\n     </div>\n     <div class='main-title'>전문규격</div>\n     
+<div class='sub-title'>HTTP METHOD</div>\n     <div class='sub-content margin-bottom-25'>전송 요청을 위한 
+HTTP GET/POST 방식을 제공하며, 전송응답은 XML/JSON 방식을 사용합니다.</div>\n     <div class='sub-title'>ENCODING
+</div>\n     <div class='sub-content margin-bottom-25'>UTF-8 인코딩을 기본으로 제공합니다.</div>\n     
+<div class='sub-title'>TIMEZONE</div>\n     <div class='sub-content'>배송정보에 사용된 시간은 한국 표준 시 
+KST(UTC+9)를 사용합니다.</div>\n     <div class='main-title'>REST API 스팩</div>\n     <div class='sub-title'>
+Base Url</div>\n     <pre class='sub-content'> http://info.sweettracker.co.kr</pre>\n   </div><!--center title 
+row end-->\n </section>\n</div>","version":"1.0.0","title":"스마트택배 배송조회 API Doc","contact":{},
+"license":{}},"host":"info.sweettracker.co.kr","basePath":"/","tags":[{"name":"company-api","description":
+"택배사 목록 가져오기"},{"name":"recommend-api","description":"추천 택배사 목록 가져오기"},{"name":"tracking-api",
+"description":"운송장 번호 조회"}],
+
+"paths":{"/api/v1/companylist":{"get":{"tags":["company-api"],
+"summary":"택배사 조회","description":"Response code 404 일 경우 response body 의 code 와 메시지 확인 
+바랍니다","operationId":"getCompanyListUsingGET","consumes":["application/json"],"produces":["application/json;
+charset=UTF-8","application/xml;charset=UTF-8"],
+"parameters":[{"name":"t_key","in":"query","description":
+"발급받은 키","required":true,"type":"string"}],"responses":{"200":{"description":"택배사 조회 정상","schema":
+{"$ref":"#/definitions/Companies"}},"500":{"description":"서버 에러 입니다","schema":{"$ref":"#/definitions/Status"}},
+"404":{"description":"code 와 msg 정보 확인 바랍니다.","schema":{"$ref":"#/definitions/Status"}}}}},
+
+"/api/v1/recommend":{"get":{"tags":["recommend-api"],"summary":"추천 택배사 정보 가져오기","description"
+                :"Response code 404 일 경우 response body 의 code 와 메시지 확인 바랍니다","operationId":
+                "getRecommendCompanyUsingGET","consumes":["application/json"],"produces":["application/xml;charset=utf8",
+                "application/json;charset=UTF-8"],
+        "parameters":[{"name":"t_key","in":"query","description":"발급받은 키","required":true,"type":"string"},
+            {"name":"t_invoice","in":"query","description":"운송장 번호","required":true,"type":"string"}], 
+        "responses":{"200":{"description":"택배사 추천 정보 조회 정상","schema":{"$ref":"#/definitions/Companies"}},
+        "500":{"description":"서버 에러 입니다","schema":{"$ref":"#/definitions/Status"}},
+        "404":{"description":"code 와 msg 정보 확인 바랍니다.","schema":{"$ref":"#/definitions/Status"}}}}},
+
+"/api/v1/trackingInfo":{"get":{"tags":["tracking-api"],"summary":"운송장 번호 조회","description":
+        "Response code 404 일 경우 response body 의 code 와 msg 확인 바랍니다","operationId":"getInvoiceInfoUsingGET",
+        "consumes":["application/json"],"produces":["application/xml;charset=utf8","application/json;charset=UTF-8"],
+        "parameters":[{"name":"t_key","in":"query","description":"발급받은 키","required":true,"type":"string"},
+                    {"name":"t_code","in":"query","description":"택배사 코드","required":true,"type":"string"},{"name":
+                    "t_invoice","in":"query","description":"운송장 번호","required":true,"type":"string"}],"responses":{
+        "101":{"description":"발급된 고유키가 존재 하지 않음","schema":{"$ref":"#/definitions/Status"}},"200":{
+        "description":"운송장 번호 조회 결과 정상","schema":{"$ref":"#/definitions/TrackingInfo"}},"102":{"description":
+        "만료된 키","schema":{"$ref":"#/definitions/Status"}},"103":{"description":"키 사용량 초과","schema":{"$ref":
+        "#/definitions/Status"}},"500":{"description":"서버 에러 입니다","schema":{"$ref":"#/definitions/Status"}},
+        "104":{"description":"유효하지 않은 운송장 번호 혹은 택배사 코드 입력","schema":{"$ref":"#/definitions/Status"}},
+        "105":{"description":"동일한 운송장의 하루 요청 제한 건수 초과","schema":{"$ref":"#/definitions/Status"}},
+        "106":{"description":"운송장 번호 조회 에러","schema":{"$ref":"#/definitions/Status"}},"404":{"description":
+        "code 와 msg 정보 확인 바랍니다.","schema":{"$ref":"#/definitions/Status"}}}}}},
+
+"definitions":{"Status":{"type":
+        "object","properties":{"code":{"type":"string"},"msg":{"type":"string"},"status":{"type":"boolean"}}},
+    "Companies":{"type":"object","properties":{"Code":{"type":"string","description":"택배 회사 코드"},"Name":
+                {"type":"string","description":"택배 회사 이름"}}},"TrackingInfo":{"type":"object","properties":{"adUrl":{
+                "type":"string","description":"택배사에서 광고용으로 사용하는 주소"},"complete":{"type":"string","description":
+                "배송 완료 여부(true or false)"},"completeYN":{"type":"string","description":"배송 완료 여부 (Y,N)"},"estimate":
+                {"type":"string","description":"배송예정 시간"},"firstDetail":{"type":"object","description":"firstDetail"},
+                "invoiceNo":{"type":"string","description":"운송장 번호"},"itemImage":{"type":"string","description":
+                "상품이미지 url"},"itemName":{"type":"string","description":"상품 이름"},"lastDetail":{"type":"object",
+                "description":"배송 완료후 정보"},"lastStateDetail":{"type":"object","description":"배송 완료후 정보"},
+                "level":{"type":"string","description":"진행단계 [level 1: 배송준비중, 2: 집화완료, 3: 배송중, 4: 지점 도착, 
+                5: 배송출발, 6:배송 완료]"},"orderNumber":{"type":"string","description":"주문 번호"},"productInfo":{"type"
+                :"string","description":"상품정보"},"result":{"type":"string","description":"조회 결과"},"trackingDetails":
+                {"type":"array","description":"상세 정보","items":{"$ref":"#/definitions/TrackingDetail"}},
+                "zipCode":{"type":"string","description":"zipCode"}}},
+
+"TrackingDetail":{"type":"object","properties":{"code":{"type":
+"string","description":"배송상태 코드"},"kind":{"type":"string","description":"진행상태"},"level":{"type":"string",
+"description":"진행단계"},"manName":{"type":"string","description":"배송기사 이름"},"manPic":{"type":"string",
+"description":"배송기사 전화번호"},"remark":{"type":"string","description":"비고"},"telno":{"type":"string",
+"description":"진행위치(지점)전화번호 (json 요청시)"},"telno2":{"type":"string","description":"배송기사 전화번호 
+(json 요청시)"},"time":{"type":"string","description":"진행시간 (json 요청시)"},"timeString":{"type":"string",
+"description":"진행시간"},"trans_telno":{"type":"string","description":"진행위치(지점)전화번호 (xml 요청시)"},
+"trans_telno2":{"type":"string","description":"배송기사 전화번호  (xml 요청시)"},"trans_time":{"type":"string",
+"description":"진행시간 (xml 요청시)"},"trans_where":{"type":"string","description":"진행위치지점 (xml 요청시)"},
+"where":{"type":"string","description":"진행위치지점 (json 요청시)"}}}}}
+
